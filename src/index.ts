@@ -5,7 +5,7 @@ const app = express()
 const porta = process.env.PORT
 
 
-app.use(express.json)
+app.use(express.json())
 app.get('/', (req, res) => {
     return res.json('Tudo Certo!')
 })
@@ -14,3 +14,6 @@ app.get('/', (req, res) => {
 app.listen(porta, () =>{
     console.log(`Servidor inicializado na porta ${porta}`)
 })
+
+// TDD -> test driver development -> Desenvolvimento Guiado por Testes
+// Modelo Link
