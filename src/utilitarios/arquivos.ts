@@ -3,10 +3,10 @@ import Link from '../modelos/Link'
 
 const caminhoBancoDeDados = 'src/bancoDeDados.json'
 
-export async function lerDados(): Promise<Link[]>{
-    const dados = await fs.readFile(caminhoBancoDeDados)
-    const parse = JSON.parse(dados.toString())
-    return parse
+export async function lerDados(): Promise<Link[]> {
+	const dados = await fs.readFile(caminhoBancoDeDados)
+	const parse = JSON.parse(dados.toString())
+	return parse
 }
 
 export async function adicionarDados( link: Link){
